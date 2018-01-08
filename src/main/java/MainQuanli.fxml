@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainQLController">
+   <children>
+      <Button layoutX="272.0" layoutY="96.0" mnemonicParsing="false" onAction="#KiemtraMenu" prefHeight="78.0" prefWidth="188.0" text="MENU">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/Hieuhip/eclipse-workspace/Product/image/menu.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button layoutX="42.0" layoutY="96.0" mnemonicParsing="false" onAction="#KiemtraHoadon" prefHeight="78.0" prefWidth="188.0" text="HÓA ĐƠN">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/Hieuhip/eclipse-workspace/Product/image/bill.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button layoutX="366.0" layoutY="225.0" mnemonicParsing="false" onAction="#Quaylai" prefHeight="40.0" prefWidth="110.0" text="Quay lại">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/Hieuhip/eclipse-workspace/Product/image/lui.png" />
+               </image></ImageView>
+         </graphic></Button>
+      <Button layoutX="42.0" layoutY="225.0" mnemonicParsing="false" onAction="#tao" prefHeight="40.0" prefWidth="110.0" text="Thêm NV">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/Hieuhip/eclipse-workspace/Product/image/nv.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

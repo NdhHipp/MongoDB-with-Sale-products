@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CheckHDController">
+   <children>
+      <Button layoutX="570.0" layoutY="20.0" mnemonicParsing="false" onAction="#Quaylai" prefHeight="40.0" prefWidth="110.0" text="Quay lại">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/Hieuhip/eclipse-workspace/Product/image/lui.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <TextField fx:id="chdtimkiem" alignment="CENTER_RIGHT" layoutX="53.0" layoutY="82.0" prefHeight="31.0" prefWidth="402.0" promptText="Nhập thông tin hóa đơn cần tìm" />
+      <Separator layoutX="20.0" layoutY="134.0" prefHeight="0.0" prefWidth="652.0" />
+      <Button layoutX="470.0" layoutY="80.0" mnemonicParsing="false" onAction="#Timkiem" prefHeight="35.0" prefWidth="110.0" text="Tìm kiếm">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/Hieuhip/eclipse-workspace/Product/image/search.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <ListView fx:id="chdlist" layoutX="20.0" layoutY="150.0" prefHeight="490.0" prefWidth="326.0" />
+      <Separator layoutX="20.0" layoutY="660.0" prefHeight="0.0" prefWidth="652.0" />
+      <Text layoutX="20.0" layoutY="750.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tổng thanh toán:">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="20.0" layoutY="690.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mã Hóa đơn:">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="20.0" layoutY="780.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nhân viên:">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="19.0" layoutY="720.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thời gian:">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <Label fx:id="chdma" layoutX="134.0" layoutY="669.0" prefHeight="27.0" prefWidth="502.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="chdthoigian" layoutX="115.0" layoutY="699.0" prefHeight="27.0" prefWidth="488.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="chdtongtt" layoutX="175.0" layoutY="729.0" prefHeight="27.0" prefWidth="488.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="chdnhanvien" layoutX="124.0" layoutY="759.0" prefHeight="27.0" prefWidth="488.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Text layoutX="440.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thông tin sản phẩm">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <Label fx:id="chdsp1" layoutX="354.0" layoutY="175.0" prefHeight="21.0" prefWidth="334.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="chdsp3" layoutX="354.0" layoutY="255.0" prefHeight="21.0" prefWidth="334.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="chdsp2" layoutX="354.0" layoutY="215.0" prefHeight="21.0" prefWidth="334.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="chdsp4" layoutX="354.0" layoutY="295.0" prefHeight="21.0" prefWidth="334.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="chdsp5" layoutX="354.0" layoutY="335.0" prefHeight="21.0" prefWidth="334.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="chdsp6" layoutX="354.0" layoutY="375.0" prefHeight="21.0" prefWidth="334.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="chdsp7" layoutX="354.0" layoutY="415.0" prefHeight="21.0" prefWidth="334.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="chdsp8" layoutX="354.0" layoutY="455.0" prefHeight="21.0" prefWidth="334.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="chdsp9" layoutX="354.0" layoutY="495.0" prefHeight="21.0" prefWidth="334.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="chdsp10" layoutX="354.0" layoutY="535.0" prefHeight="21.0" prefWidth="334.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

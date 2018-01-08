@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainController">
+   <children>
+      <ImageView fitHeight="59.0" fitWidth="155.0" layoutX="45.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Hieuhip/eclipse-workspace/Product/image/trasua.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="114.0" fitWidth="223.0" layoutX="146.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Hieuhip/eclipse-workspace/Product/image/tea.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="lguser" layoutX="115.0" layoutY="132.0" prefHeight="37.0" prefWidth="270.0" promptText="Tài khoản">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="lgpwd" layoutX="115.0" layoutY="180.0" prefHeight="37.0" prefWidth="270.0" promptText="Mật khẩu">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </PasswordField>
+      <Button alignment="CENTER_RIGHT" layoutX="396.0" layoutY="19.0" mnemonicParsing="false" onAction="#thoat" prefHeight="37.0" prefWidth="90.0" text="Thoát">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/Hieuhip/eclipse-workspace/Product/image/exit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Text layoutX="115.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thông tin người dùng">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <Separator layoutX="115.0" layoutY="121.0" prefHeight="0.0" prefWidth="173.0" />
+      <Button alignment="CENTER" layoutX="321.0" layoutY="234.0" mnemonicParsing="false" onAction="#Login" prefHeight="37.0" prefWidth="79.0">
+         <graphic>
+            <ImageView fitHeight="37.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/Hieuhip/eclipse-workspace/Product/image/login.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fitHeight="37.0" fitWidth="27.0" layoutX="75.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Hieuhip/eclipse-workspace/Product/image/user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="37.0" fitWidth="39.0" layoutX="69.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/Hieuhip/eclipse-workspace/Product/image/pass.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

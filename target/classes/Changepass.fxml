@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ChangepassController">
+   <children>
+      <Label layoutX="33.0" layoutY="37.0" text="Mật khẩu cũ">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font></Label>
+      <Label layoutX="33.0" layoutY="85.0" text="Mật khẩu mới">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font></Label>
+      <Label layoutX="33.0" layoutY="135.0" text="Xác nhận mật khẩu">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font></Label>
+      <Button layoutX="367.0" layoutY="221.0" mnemonicParsing="false" onAction="#Huy" prefHeight="35.0" prefWidth="100.0" text="Hủy">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/Hieuhip/eclipse-workspace/Product/image/cancel.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button layoutX="243.0" layoutY="221.0" mnemonicParsing="false" onAction="#XacNhan" prefHeight="35.0" prefWidth="100.0" text="OK">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/Hieuhip/eclipse-workspace/Product/image/confirm.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <PasswordField fx:id="matkhaumoi" layoutX="190.0" layoutY="82.0" prefHeight="31.0" prefWidth="277.0" promptText="Nhập mật khẩu mới" />
+      <PasswordField layoutX="190.0" layoutY="132.0" prefHeight="31.0" prefWidth="277.0" promptText="Xác nhận mật khẩu mới" fx:id="xacnhanmk" />
+      <PasswordField fx:id="matkhaucu" layoutX="190.0" layoutY="32.0" prefHeight="31.0" prefWidth="277.0" promptText="Nhập mật khẩu cũ" />
+   </children>
+</AnchorPane>

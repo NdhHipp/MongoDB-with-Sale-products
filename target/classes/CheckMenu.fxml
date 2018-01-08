@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="XemMenuController">
+   <children>
+      <Button layoutX="570.0" layoutY="20.0" mnemonicParsing="false" onAction="#Quaylai" prefHeight="40.0" prefWidth="110.0" text="Quay lại">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/Hieuhip/eclipse-workspace/Product/image/lui.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <TextField alignment="CENTER_RIGHT" layoutX="74.0" layoutY="82.0" prefHeight="31.0" prefWidth="403.0" promptText="Nhập thông tin cần kiểm tra" fx:id="xmtimkiem" />
+      <Button layoutX="493.0" layoutY="80.0" mnemonicParsing="false" onAction="#Timkiem" prefHeight="35.0" prefWidth="110.0" text="Tìm kiếm">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/Hieuhip/eclipse-workspace/Product/image/search.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button layoutX="624.0" layoutY="74.0" mnemonicParsing="false" onAction="#Them" prefHeight="40.0" prefWidth="45.0">
+         <graphic>
+            <ImageView fitHeight="37.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/Hieuhip/eclipse-workspace/Product/image/newmenu.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Separator layoutX="20.0" layoutY="134.0" prefHeight="0.0" prefWidth="652.0" />
+      <Button layoutX="455.0" layoutY="745.0" mnemonicParsing="false" onAction="#Sua" prefHeight="35.0" prefWidth="100.0" text="Sửa">
+         <graphic>
+            <ImageView fitHeight="27.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/Hieuhip/eclipse-workspace/Product/image/repair.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button layoutX="571.0" layoutY="745.0" mnemonicParsing="false" onAction="#Xoa" prefHeight="35.0" prefWidth="100.0" text="Xóa">
+         <graphic>
+            <ImageView fitHeight="27.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/Hieuhip/eclipse-workspace/Product/image/del.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <ListView layoutX="19.0" layoutY="151.0" prefHeight="520.0" prefWidth="652.0" fx:id="xmlist" />
+      <TextField layoutX="386.0" layoutY="693.0" prefHeight="31.0" prefWidth="286.0" fx:id="xmtensp" />
+      <Button layoutX="276.0" layoutY="693.0" mnemonicParsing="false" onAction="#chitiet" prefHeight="31.0" prefWidth="100.0" text="Chi tiết">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/Hieuhip/eclipse-workspace/Product/image/detail.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

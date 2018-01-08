@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainstaffController">
+   <children>
+      <Text layoutX="22.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nhân viên:">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Text>
+      <Button layoutX="538.0" layoutY="728.0" mnemonicParsing="false" onAction="#inhd" prefHeight="24.0" prefWidth="137.0" text="In hóa đơn">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/Hieuhip/eclipse-workspace/Product/image/print.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Text layoutX="21.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ngày/giờ:">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Text>
+      <Separator layoutX="20.0" layoutY="112.0" prefHeight="3.0" prefWidth="658.0" />
+      <Button layoutX="583.0" layoutY="125.0" mnemonicParsing="false" onAction="#Them" prefHeight="31.0" prefWidth="92.0" text="Thêm">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/Hieuhip/eclipse-workspace/Product/image/add.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <TextField fx:id="msnhapma" alignment="TOP_RIGHT" layoutX="303.0" layoutY="125.0" prefHeight="31.0" prefWidth="205.0" promptText="Tên/Mã sản phẩm" />
+      <Separator layoutX="19.0" layoutY="658.0" prefHeight="3.0" prefWidth="658.0" />
+      <Button layoutX="579.0" layoutY="26.0" mnemonicParsing="false" onAction="#Quaylai" prefHeight="40.0" prefWidth="110.0" text="Quay lại">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/Hieuhip/eclipse-workspace/Product/image/lui.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Label layoutX="333.0" layoutY="669.0" text="Tổng thanh toán:">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Label>
+      <Text layoutX="660.0" layoutY="688.0" strokeType="OUTSIDE" strokeWidth="0.0" text="đ" />
+      <Button layoutX="33.0" layoutY="125.0" mnemonicParsing="false" onAction="#Tao" prefHeight="31.0" prefWidth="110.0" text="Tạo mới">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="29.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/Hieuhip/eclipse-workspace/Product/image/new.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Label fx:id="msnhanvien" layoutX="108.0" layoutY="33.0" />
+      <Label fx:id="msngay" layoutX="108.0" layoutY="54.0" />
+      <Label fx:id="sp1" layoutX="33.0" layoutY="210.0" prefHeight="27.0" prefWidth="237.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Text layoutX="33.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sản phẩm" wrappingWidth="137.0">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="456.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Số lượng">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <Label fx:id="sl1" alignment="TOP_RIGHT" contentDisplay="CENTER" layoutX="456.0" layoutY="210.0" prefHeight="27.0" prefWidth="72.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Text layoutX="606.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Đơn giá">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <Label fx:id="dg1" alignment="TOP_RIGHT" contentDisplay="CENTER" layoutX="568.0" layoutY="210.0" prefHeight="27.0" prefWidth="100.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="sp2" layoutX="33.0" layoutY="250.0" prefHeight="27.0" prefWidth="237.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="sp3" layoutX="33.0" layoutY="290.0" prefHeight="27.0" prefWidth="237.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="sp4" layoutX="33.0" layoutY="330.0" prefHeight="27.0" prefWidth="237.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="sp5" layoutX="33.0" layoutY="370.0" prefHeight="27.0" prefWidth="237.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="sp6" layoutX="33.0" layoutY="410.0" prefHeight="27.0" prefWidth="237.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="sp7" layoutX="33.0" layoutY="450.0" prefHeight="27.0" prefWidth="237.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="sp8" layoutX="33.0" layoutY="490.0" prefHeight="27.0" prefWidth="237.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="sp9" layoutX="33.0" layoutY="530.0" prefHeight="27.0" prefWidth="237.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="sp10" layoutX="33.0" layoutY="570.0" prefHeight="27.0" prefWidth="237.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="sl2" alignment="TOP_RIGHT" contentDisplay="CENTER" layoutX="456.0" layoutY="250.0" prefHeight="3.0" prefWidth="72.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="sl7" alignment="TOP_RIGHT" contentDisplay="CENTER" layoutX="456.0" layoutY="450.0" prefHeight="27.0" prefWidth="72.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="sl4" alignment="TOP_RIGHT" contentDisplay="CENTER" layoutX="456.0" layoutY="330.0" prefHeight="3.0" prefWidth="72.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="sl3" alignment="TOP_RIGHT" contentDisplay="CENTER" layoutX="456.0" layoutY="290.0" prefHeight="3.0" prefWidth="72.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="sl6" alignment="TOP_RIGHT" contentDisplay="CENTER" layoutX="456.0" layoutY="410.0" prefHeight="3.0" prefWidth="72.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="sl5" alignment="TOP_RIGHT" contentDisplay="CENTER" layoutX="456.0" layoutY="370.0" prefHeight="3.0" prefWidth="72.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="sl10" alignment="TOP_RIGHT" contentDisplay="CENTER" layoutX="456.0" layoutY="570.0" prefHeight="27.0" prefWidth="72.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="sl8" alignment="TOP_RIGHT" contentDisplay="CENTER" layoutX="456.0" layoutY="490.0" prefHeight="27.0" prefWidth="72.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="sl9" alignment="TOP_RIGHT" contentDisplay="CENTER" layoutX="456.0" layoutY="530.0" prefHeight="27.0" prefWidth="72.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="dg2" alignment="TOP_RIGHT" contentDisplay="CENTER" layoutX="568.0" layoutY="250.0" prefHeight="27.0" prefWidth="100.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="dg3" alignment="TOP_RIGHT" contentDisplay="CENTER" layoutX="568.0" layoutY="290.0" prefHeight="27.0" prefWidth="100.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="dg4" alignment="TOP_RIGHT" contentDisplay="CENTER" layoutX="568.0" layoutY="330.0" prefHeight="27.0" prefWidth="100.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="dg5" alignment="TOP_RIGHT" contentDisplay="CENTER" layoutX="568.0" layoutY="370.0" prefHeight="27.0" prefWidth="100.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="dg6" alignment="TOP_RIGHT" contentDisplay="CENTER" layoutX="568.0" layoutY="410.0" prefHeight="27.0" prefWidth="100.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="dg7" alignment="TOP_RIGHT" contentDisplay="CENTER" layoutX="568.0" layoutY="450.0" prefHeight="27.0" prefWidth="100.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="dg8" alignment="TOP_RIGHT" contentDisplay="CENTER" layoutX="568.0" layoutY="490.0" prefHeight="27.0" prefWidth="100.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="dg9" alignment="TOP_RIGHT" contentDisplay="CENTER" layoutX="568.0" layoutY="530.0" prefHeight="27.0" prefWidth="100.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="dg10" alignment="TOP_RIGHT" contentDisplay="CENTER" layoutX="568.0" layoutY="570.0" prefHeight="27.0" prefWidth="100.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="mstong" alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="472.0" layoutY="669.0" prefHeight="27.0" prefWidth="181.0" text="0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Text layoutX="350.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mã ">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Text>
+      <Label fx:id="m1" alignment="CENTER" contentDisplay="CENTER" layoutX="323.0" layoutY="210.0" prefHeight="27.0" prefWidth="85.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="m2" alignment="CENTER" contentDisplay="CENTER" layoutX="323.0" layoutY="250.0" prefHeight="27.0" prefWidth="85.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="m3" alignment="CENTER" contentDisplay="CENTER" layoutX="323.0" layoutY="290.0" prefHeight="27.0" prefWidth="85.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="m4" alignment="CENTER" contentDisplay="CENTER" layoutX="323.0" layoutY="330.0" prefHeight="27.0" prefWidth="85.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="m5" alignment="CENTER" contentDisplay="CENTER" layoutX="323.0" layoutY="373.0" prefHeight="27.0" prefWidth="85.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="m6" alignment="CENTER" contentDisplay="CENTER" layoutX="323.0" layoutY="410.0" prefHeight="27.0" prefWidth="85.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="m7" alignment="CENTER" contentDisplay="CENTER" layoutX="323.0" layoutY="450.0" prefHeight="27.0" prefWidth="85.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="m8" alignment="CENTER" contentDisplay="CENTER" layoutX="323.0" layoutY="490.0" prefHeight="27.0" prefWidth="85.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="m9" alignment="CENTER" contentDisplay="CENTER" layoutX="323.0" layoutY="530.0" prefHeight="27.0" prefWidth="85.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="m10" alignment="CENTER" contentDisplay="CENTER" layoutX="323.0" layoutY="570.0" prefHeight="27.0" prefWidth="85.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="msnhapso" alignment="CENTER_RIGHT" layoutX="516.0" layoutY="125.0" prefHeight="31.0" prefWidth="52.0" promptText="Số" text="1" />
+   </children>
+</AnchorPane>
